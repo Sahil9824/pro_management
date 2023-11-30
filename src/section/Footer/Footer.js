@@ -42,15 +42,15 @@ export const Footer = () => {
         <br />
         <br />
         <h3 className={style.boldHeading}>MARGIN TRADING DISCLAIMER:</h3>
-        Trading foreign exchange and CFD's on margin carries a high level of
-        risk and may not be suitable for all investors. The high degree of
+        Trading foreign exchange and CFD&apos;s on margin carries a high level
+        of risk and may not be suitable for all investors. The high degree of
         leverage can work against you as well as for you. Before deciding to
         invest in foreign exchange, you should carefully consider your
         investment objectives, level of experience, and risk appetite. The
         possibility exists that you could sustain a loss of some or all of your
         initial investment, and therefore, you should not invest money that you
         cannot afford to lose. You should be aware of all the risks associated
-        with foreign exchange and CFD's trading and seek advice from an
+        with foreign exchange and CFD&apos;s trading and seek advice from an
         independent financial advisor if you have any doubts. <br />
         <br />
         <h3 className={style.boldHeading}>SITE DISCLAIMER:</h3>
@@ -74,11 +74,11 @@ export const Footer = () => {
         licensed representative of their choice regarding any particular trade
         or trading strategy. No representation is being made that any account
         will or is likely to achieve profits or losses similar to those
-        discussed on this website. Please note that the servers' names listed on
-        this website are not a recommendation nor an advertising made by Traders
-        Mirror. Traders Mirror is totally independent and has no partnership
-        with any brokers. You have to make your own due diligence when selecting
-        a broker.
+        discussed on this website. Please note that the servers&apos; names
+        listed on this website are not a recommendation nor an advertising made
+        by Traders Mirror. Traders Mirror is totally independent and has no
+        partnership with any brokers. You have to make your own due diligence
+        when selecting a broker.
         <br />
         <br /> <h3 className={style.boldHeading}>SOFTWARE DISCLAIMER:</h3>{" "}
         Although rare, internet-based trading can involve technical risks
