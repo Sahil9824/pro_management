@@ -1,0 +1,431 @@
+.main {
+  padding-left: 6.31%;
+  padding-right: 6.31%;
+  margin-top: 161px;
+
+  .cardWrap {
+    height: 157px;
+    width: 100%;
+    background: rgba(25, 25, 25, 1);
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+
+    .textWrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-between;
+
+      .textOne {
+        font-family: "Space Grotesk";
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700;
+        background: linear-gradient(
+          273.69deg,
+          #5532fa 0%,
+          #5a35fa 0.01%,
+          #a770ff 97.93%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+      }
+
+      .textTwo {
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .verticalLine {
+      height: 76.42px;
+      width: 4px;
+      background: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .cardWrapMobile {
+    display: none;
+  }
+
+  .secondPart {
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+
+    .titleWrap {
+      margin-top: 64px;
+      .titleOne {
+        font-family: "Space Grotesk";
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        font-weight: 700;
+        white-space: nowrap;
+        text-align: left;
+
+        p {
+          display: inline;
+          font-family: "Space Grotesk";
+          text-transform: uppercase;
+          font-size: 48px;
+          font-weight: 700;
+        }
+      }
+      .titleTwo {
+        font-family: "Space Grotesk";
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 700;
+        background: linear-gradient(
+          273.69deg,
+          #5532fa 0%,
+          #5a35fa 0.01%,
+          #a770ff 97.93%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: left;
+      }
+      .titleThree {
+        margin-top: 28px;
+        width: 100%;
+        font-family: "DM Sans";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+      }
+    }
+  }
+
+  .thirdPart {
+    display: flex;
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+    width: 100%;
+    margin-top: 44px;
+    justify-content: space-between;
+
+    .firstCardWrap {
+      height: 477px;
+      max-width: 342px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      background: rgba(25, 25, 25, 1);
+      width: 328.5%;
+      padding-top: 40px;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 40px;
+
+      .imageWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 269px;
+        height: 228px;
+        border-radius: 8px;
+        background: black;
+      }
+      .heading {
+        margin-top: 33px;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: left;
+      }
+      .description {
+        width: 90%;
+        margin-top: 20px;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: left;
+      }
+    }
+  }
+
+  .buttonWrap {
+    margin-left: 2.2%;
+    margin-top: 46px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-color: #5532fa;
+    border-image-slice: 1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    margin-top: 38px;
+    align-items: center;
+    padding-left: 7.81%;
+    padding-right: 7.81%;
+    justify-content: center;
+
+    .cardWrap {
+      display: none;
+    }
+    .cardWrapMobile {
+      height: 257px;
+      width: 100%;
+      background: rgba(25, 25, 25, 1);
+      display: flex;
+      padding-left: 6%;
+      padding-right: 6%;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 30px;
+
+      .columnOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 48px;
+
+        .textWrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-between;
+
+          .textOne {
+            font-family: "Space Grotesk";
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(
+              273.69deg,
+              #5532fa 0%,
+              #5a35fa 0.01%,
+              #a770ff 97.93%
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+          }
+
+          .textTwo {
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+      }
+      .columnTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 48px;
+
+        .textWrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-between;
+
+          .textOne {
+            font-family: "Space Grotesk";
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(
+              273.69deg,
+              #5532fa 0%,
+              #5a35fa 0.01%,
+              #a770ff 97.93%
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+          }
+
+          .textTwo {
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+      }
+
+      .verticalLine {
+        height: 208px;
+        width: 2px;
+        background: rgba(0, 0, 0, 1);
+      }
+    }
+
+    .secondPart {
+      padding-left: 8.2%;
+      padding-right: 8.2%;
+
+      .titleWrap {
+        margin-top: 43px;
+        .titleOne {
+          font-family: "Space Grotesk";
+          text-transform: uppercase;
+          font-size: 32px;
+          font-weight: 700;
+          text-align: left;
+
+          p {
+            display: flex;
+            font-family: "Space Grotesk";
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(
+              273.69deg,
+              #5532fa 0%,
+              #5a35fa 0.01%,
+              #a770ff 97.93%
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: left;
+          }
+        }
+        .titleTwo {
+          font-family: "Space Grotesk";
+          text-transform: uppercase;
+          font-size: 32px;
+          font-weight: 700;
+          background: linear-gradient(
+            273.69deg,
+            #5532fa 0%,
+            #5a35fa 0.01%,
+            #a770ff 97.93%
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+          text-align: left;
+        }
+        .titleThree {
+          margin-top: 28px;
+          width: 92%;
+          font-family: "DM Sans";
+          margin-left: 2%;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+        }
+      }
+    }
+
+    .thirdPart {
+      display: flex;
+      flex-direction: column;
+      padding-left: 2.2%;
+      padding-right: 2.2%;
+      gap: 38px;
+      width: 100%;
+      margin-top: 44px;
+      align-items: center;
+      justify-content: space-between;
+
+      .firstCardWrap {
+        height: 477px;
+        max-width: 342px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background: rgba(25, 25, 25, 1);
+        width: 328.5%;
+        padding-top: 40px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 40px;
+
+        .imageWrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 269px;
+          height: 228px;
+          border-radius: 8px;
+          background: black;
+        }
+        .heading {
+          margin-top: 33px;
+          font-family: "DM Sans";
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+        .description {
+          width: 90%;
+          margin-top: 20px;
+          font-family: "DM Sans";
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .buttonWrap {
+      margin-left: 2.2%;
+      margin-top: 32px;
+      width: 200px;
+      height: 60px;
+      border: 2px solid transparent;
+      border-color: #5532fa;
+      border-image-slice: 1;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}

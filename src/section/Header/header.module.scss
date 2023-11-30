@@ -1,0 +1,183 @@
+.Wrap {
+  height: 152px;
+  width: 100%;
+  display: flex;
+  padding-right: 40px;
+  padding-left: 52px;
+  flex-direction: row;
+  justify-content: space-between;
+  background: none;
+  align-items: center;
+
+  .logoListWrap {
+    display: flex;
+    width: 53.61%;
+    // justify-content: space-between;
+    align-items: center;
+
+    .logoWrap {
+      height: 70px;
+      width: 70px;
+      margin-right: 2.849%;
+
+      .desktopLogo {
+        display: flex;
+      }
+
+      .mobileLogo {
+        display: none;
+      }
+    }
+
+    .listWrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .linksWrap {
+    width: 27.13%;
+    display: flex;
+    justify-content: space-between;
+
+    .buttonWrapOne {
+      width: 140px;
+      height: 60px;
+      border: 2px solid transparent;
+      border-color: #5532fa;
+      border-image-slice: 1;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .buttonWrapTwo {
+      width: 200px;
+      height: 60px;
+      background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .Wrap {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding-right: 14px;
+    background: rgba(5, 5, 6, 1);
+    padding-left: 19px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoListWrap {
+      display: flex;
+      // width: 53.61%;
+      // justify-content: space-between;
+      align-items: center;
+
+      .logoWrap {
+        height: 48px;
+        width: 48px;
+
+        .desktopLogo {
+          display: none;
+        }
+
+        .mobileLogo {
+          display: flex;
+        }
+      }
+
+      .listWrap {
+        display: none;
+      }
+    }
+
+    .linksWrap {
+      width: 51.16%;
+      display: flex;
+      gap: 11px;
+      justify-content: space-between;
+
+      .buttonWrapOne {
+        width: 88px;
+        height: 44px;
+        border: 2px solid transparent;
+        border-color: #5532fa;
+        border-image-slice: 1;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-family: "Inter";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+
+      .buttonWrapTwo {
+        width: 121px;
+        height: 44px;
+        background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-family: "Inter";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          text-align: center;
+
+          br {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

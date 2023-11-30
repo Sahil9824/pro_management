@@ -1,0 +1,117 @@
+.main {
+  width: 100%;
+  position: relative;
+
+  .backgroundWrap {
+    position: absolute;
+    left: 152px;
+    top: -9px;
+    z-index: -2;
+
+    .backgroundImageDesktop {
+      display: flex;
+    }
+    .backgroundImageMobile {
+      display: none;
+    }
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.86%;
+    z-index: 10;
+
+    .textWrap {
+      margin-top: 89px;
+      width: 42%;
+      display: flex;
+      flex-direction: column;
+
+      .textOne {
+        font-family: "Space Grotesk";
+        font-size: 56px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .textTwo {
+        font-family: "Space Grotesk";
+        text-transform: uppercase;
+        font-size: 56px;
+        font-weight: 700;
+        background: linear-gradient(
+          273.69deg,
+          #5532fa 0%,
+          #5a35fa 0.01%,
+          #a770ff 97.93%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .textThree {
+        font-family: "DM Sans";
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+
+    .linksWrap {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 19px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+    position: relative;
+
+    .backgroundWrap {
+      left: 0px;
+      top: 0px;
+
+      .backgroundImageDesktop {
+        display: none;
+      }
+      .backgroundImageMobile {
+        display: flex;
+      }
+    }
+
+    .wrap {
+      margin-left: 0%;
+      align-items: center;
+
+      //   z-index: 10;
+      text-align: center;
+
+      .textWrap {
+        margin-top: 352px;
+        width: 100%;
+        align-items: center;
+
+        .textOne {
+          font-size: 32px;
+        }
+        .textTwo {
+          font-size: 32px;
+        }
+        .textThree {
+          width: 70%;
+          font-size: 16px;
+          margin-top: 19px;
+        }
+      }
+
+      .linksWrap {
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
