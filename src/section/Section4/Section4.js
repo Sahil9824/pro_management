@@ -1,7 +1,8 @@
 import React from "react";
 import style from "../..//section/Section4/section4.module.scss";
 import Background from "../../Assets/Section4Bg.png";
-import BackgroundMobile from "../../Assets/Section4BgMobile.png";
+// import BackgroundMobile from "../../Assets/Section4BgMobile.png";
+import BackgroundMobile from "../../Assets/Section4BgMobileNew.png";
 import Image from "next/image";
 import ScreenOne from "../../Assets/dashboard.png";
 import ScreenTwo from "../../Assets/easyTouch.png";
