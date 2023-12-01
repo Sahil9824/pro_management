@@ -4,6 +4,7 @@ import Image from "next/image";
 import ScreenOne from "../../Assets/ScreenOnex.png";
 import ScreenTwo from "../../Assets/ScreenTwo.png";
 import ScreenThree from "../../Assets/ScreenThree.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Section2 = () => {
   return (
@@ -81,7 +82,7 @@ export const Section2 = () => {
         </div>
       </div>
 
-      <div className={style.secondPart}>
+      <div className={style.secondPart} id="howFund">
         <div className={style.titleWrap}>
           <h3 className={style.titleOne}>
             How Our Fund <p>Management</p>
@@ -152,11 +153,13 @@ export const Section2 = () => {
           </h3>
         </div>
       </div>
-      <div className={style.container}>
-        <div className={style.buttonWrap}>
-          <h3>View Accounts</h3>
+      <AnchorLink href="#copyAccount">
+        <div className={style.container}>
+          <div className={style.buttonWrap}>
+            <h3>View Accounts</h3>
+          </div>
         </div>
-      </div>
+      </AnchorLink>
     </div>
   );
 };

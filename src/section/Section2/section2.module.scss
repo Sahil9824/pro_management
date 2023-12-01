@@ -169,13 +169,16 @@
     margin-top: 46px;
     width: 200px;
     height: 60px;
-    border: 2px solid transparent;
-    border-color: #5532fa;
+    border: 2px solid #5532fa;
     border-image-slice: 1;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      background-color: #5532fa;
+    }
 
     h3 {
       font-family: "Inter";
@@ -416,8 +419,7 @@
       margin-top: 32px;
       width: 200px;
       height: 60px;
-      border: 2px solid transparent;
-      border-color: #5532fa;
+      border: 2px solid #5532fa;
       border-image-slice: 1;
       border-radius: 50px;
       display: flex;

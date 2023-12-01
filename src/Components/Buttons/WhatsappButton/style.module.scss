@@ -4,6 +4,7 @@
   align-items: center;
   height: 70px;
   padding-left: 19px;
+  cursor: pointer;
 
   .imgWrap {
     position: absolute;
@@ -15,9 +16,6 @@
     height: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
-    // border: 2px solid transparent;
-    // border-color: #5532fa;
-    // border-image-slice: 1;
     background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
     border-radius: 50px;
     display: flex;
@@ -42,6 +40,11 @@
         font-weight: 300;
         text-align: center;
       }
+    }
+
+    &:hover {
+      border: 1px solid #5532fa;
+      background: #000;
     }
   }
 }
