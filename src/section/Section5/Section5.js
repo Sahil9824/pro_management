@@ -34,7 +34,7 @@ export const Section5 = () => {
         />
       </div>
 
-      <div className={style.secondPart}>
+      <div className={style.secondPart} id="getStarted">
         <div className={style.titleWrap}>
           <h3 className={style.titleOne}>
             {/* Our Fund <p>Management</p> */}

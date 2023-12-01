@@ -2,31 +2,34 @@ import React from "react";
 import style from "../Footer/footer.module.scss";
 import Logo from "../../Assets/Logo.png";
 import Image from "next/image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Footer = () => {
   return (
     <div className={style.main}>
       <ul className={style.listWrap}>
-        <li>
-          <div className={style.logoWrap}>
-            <Image
-              className={style.desktopLogo}
-              src={Logo}
-              alt="logo"
-              width={70}
-              height={70}
-              quality={100}
-            />
-            <Image
-              className={style.mobileLogo}
-              src={Logo}
-              alt="logo"
-              width={48}
-              height={48}
-              quality={100}
-            />
-          </div>
-        </li>
+        <AnchorLink href="#head">
+          <li>
+            <div className={style.logoWrap}>
+              <Image
+                className={style.desktopLogo}
+                src={Logo}
+                alt="logo"
+                width={70}
+                height={70}
+                quality={100}
+              />
+              <Image
+                className={style.mobileLogo}
+                src={Logo}
+                alt="logo"
+                width={48}
+                height={48}
+                quality={100}
+              />
+            </div>
+          </li>
+        </AnchorLink>
         <li>Terms & Conditions</li>
         <li>Privacy Policy</li>
         <li>Risk Disclaimer</li>

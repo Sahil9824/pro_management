@@ -2,10 +2,11 @@ import React from "react";
 import style from "../Header/header.module.scss";
 import Logo from "../../Assets/Logo.png";
 import Image from "next/image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Header = () => {
   return (
-    <div className={style.Wrap}>
+    <div className={style.Wrap} id="head">
       <div className={style.logoListWrap}>
         <div className={style.logoWrap}>
           <Image
@@ -26,11 +27,21 @@ export const Header = () => {
           />
         </div>
         <ul className={style.listWrap}>
-          <li>How It Works</li>
-          <li>Fund Accounts</li>
-          <li>Why Us</li>
-          <li>Get Started</li>
-          <li>Download e-Book</li>
+          <AnchorLink href="#howFund">
+            <li>How It Works</li>
+          </AnchorLink>
+          <AnchorLink href="#copyAccount">
+            <li>Fund Accounts</li>
+          </AnchorLink>
+          <AnchorLink href="#whyChoose">
+            <li>Why Us</li>
+          </AnchorLink>
+          <AnchorLink href="#getStarted">
+            <li>Get Started</li>
+          </AnchorLink>
+          <AnchorLink href="#downloadBook">
+            <li>Download e-Book</li>
+          </AnchorLink>
         </ul>
       </div>
 

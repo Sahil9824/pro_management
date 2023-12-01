@@ -29,7 +29,7 @@ export const Section3 = () => {
         />
       </div>
 
-      <div className={style.secondPart}>
+      <div className={style.secondPart} id="copyAccount">
         <div className={style.titleWrap}>
           <h3 className={style.titleOne}>
             Our Fund <p>Management</p>
@@ -66,7 +66,15 @@ export const Section3 = () => {
             View our Verified ‘MyFXBook’ Results:
           </h3>
           <div className={style.container}>
-            <div className={style.buttonWrap}>
+            <div
+              className={style.buttonWrap}
+              onClick={() =>
+                window.open(
+                  "https://www.myfxbook.com/members/alexfoster/alexander-william-acc-1/8367610",
+                  "_blank"
+                )
+              }
+            >
               <h3>View Results</h3>
             </div>
           </div>
@@ -88,7 +96,15 @@ export const Section3 = () => {
             View our Verified ‘MyFXBook’ Results:
           </h3>
           <div className={style.container}>
-            <div className={style.buttonWrap}>
+            <div
+              className={style.buttonWrap}
+              onClick={() =>
+                window.open(
+                  "https://www.myfxbook.com/members/alexfoster/algo-tech/10090527",
+                  "_blank"
+                )
+              }
+            >
               <h3>View Results</h3>
             </div>
           </div>
@@ -110,7 +126,15 @@ export const Section3 = () => {
             View our Verified ‘MyFXBook’ Results:
           </h3>
           <div className={style.container}>
-            <div className={style.buttonWrap}>
+            <div
+              className={style.buttonWrap}
+              onClick={() =>
+                window.open(
+                  "https://www.myfxbook.com/members/alexfoster/algo-tech/10090527",
+                  "_blank"
+                )
+              }
+            >
               <h3>View Results</h3>
             </div>
           </div>

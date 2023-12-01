@@ -6,18 +6,21 @@ import Image from "next/image";
 import ScreenOne from "../../Assets/dashboard.png";
 import ScreenTwo from "../../Assets/easyTouch.png";
 import ScreenThree from "../../Assets/cryptoNew.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Section4 = () => {
   return (
     <div className={style.main}>
       <div className={style.imageWrap}>
-        <Image
-          src={Background}
-          alt=""
-          //   height={228}
-          //   width={269}
-          quality={100}
-        />
+        <AnchorLink href="#downloadBook">
+          <Image
+            src={Background}
+            alt=""
+            //   height={228}
+            //   width={269}
+            quality={100}
+          />
+        </AnchorLink>
       </div>
       <div className={style.imageWrapMobile}>
         <Image
@@ -29,12 +32,9 @@ export const Section4 = () => {
         />
       </div>
 
-      <div className={style.secondPart}>
+      <div className={style.secondPart} id="whyChoose">
         <div className={style.titleWrap}>
-          <h3 className={style.titleOne}>
-            {/* Our Fund <p>Management</p> */}
-            WhY choose TO Our
-          </h3>
+          <h3 className={style.titleOne}>WhY choose TO Our</h3>
           <h3 className={style.titleTwo}>investment portfolios</h3>
           <p className={style.titleThree}>
             Unlock the full potential of automated and diversified investing

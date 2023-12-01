@@ -31,7 +31,7 @@ export const Section6 = () => {
         />
       </div>
 
-      <div className={style.firstPart}>
+      <div className={style.firstPart} id="downloadBook">
         <h3 className={style.titleOne}>Download Our </h3>
         <h3 className={style.titleTwo}>
           <p>FREE</p> E-Book

@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const WhatsAppButton = () => {
   return (
-    <div className={style.wrap}>
+    <div
+      className={style.wrap}
+      onClick={() => window.open("https://web.whatsapp.com/", "_blank")}
+    >
       <div className={style.imgWrap}>
         <Image
           src={WhatsappLogo}
