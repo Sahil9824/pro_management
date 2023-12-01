@@ -4,6 +4,17 @@
   .imageWrap {
     // padding-left: 7.6%;
     // padding-right: 7.6%;
+    display: flex;
+    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .imageWrapMobile {
@@ -238,8 +249,16 @@
 
     .imageWrapMobile {
       display: flex;
+      width: inherit;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       justify-content: center;
       align-items: center;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     .secondPart {

@@ -5,8 +5,19 @@
   max-width: 1700px;
 
   .imageWrap {
+    display: flex;
+    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
     padding-left: 7.6%;
     padding-right: 7.6%;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .imageWrapMobile {
@@ -151,9 +162,19 @@
     }
 
     .imageWrapMobile {
+      padding-left: 10.5%;
+      padding-right: 8.2%;
       display: flex;
+      width: inherit;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       justify-content: center;
       align-items: center;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     .secondPart {

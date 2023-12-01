@@ -13,6 +13,7 @@ export const Section3 = () => {
       <div className={style.imageWrap}>
         <Image
           src={Background}
+          style={{ width: "100%", height: "auto" }}
           alt=""
           //   height={228}
           //   width={269}
@@ -23,6 +24,7 @@ export const Section3 = () => {
         <Image
           src={BackgroundMobile}
           alt=""
+          style={{ width: "100%", height: "auto" }}
           //   height={228}
           //   width={269}
           quality={100}

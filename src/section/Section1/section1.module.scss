@@ -5,13 +5,18 @@
   .backgroundWrap {
     position: absolute;
     left: 152px;
-    width: inherit;
+    width: -webkit-fill-available;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    justify-content: center;
+    align-items: center;
     top: -9px;
     z-index: -1;
+
+    img {
+      object-fit: cover;
+    }
 
     .backgroundImageDesktop {
       display: flex;
@@ -80,11 +85,18 @@
     .backgroundWrap {
       left: 0px;
       top: 0px;
+      position: absolute;
+      width: inherit;
+
+      img {
+        object-fit: cover;
+      }
 
       .backgroundImageDesktop {
         display: none;
       }
       .backgroundImageMobile {
+        width: inherit;
         display: flex;
       }
     }
