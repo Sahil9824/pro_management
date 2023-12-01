@@ -24,14 +24,16 @@ export const Section4 = () => {
         </AnchorLink>
       </div>
       <div className={style.imageWrapMobile}>
-        <Image
-          src={BackgroundMobile}
-          alt=""
-          style={{ width: "100%", height: "auto" }}
-          //   height={228}
-          //   width={269}
-          quality={100}
-        />
+        <AnchorLink href="#downloadBook">
+          <Image
+            src={BackgroundMobile}
+            alt=""
+            style={{ width: "100%", height: "auto" }}
+            //   height={228}
+            //   width={269}
+            quality={100}
+          />
+        </AnchorLink>
       </div>
 
       <div className={style.secondPart} id="whyChoose">
