@@ -16,6 +16,7 @@ export const Section6 = () => {
         <Image
           src={Background}
           className={style.backgroundImageDesktop}
+          style={{ width: "100%", height: 851 }}
           quality={100}
           // height={918}
           // width={1740}
@@ -24,6 +25,7 @@ export const Section6 = () => {
         <Image
           src={BackgroundMobile}
           className={style.backgroundImageMobile}
+          style={{ width: "100%", height: 313 }}
           quality={100}
           // height={918}
           // width={1740}

@@ -19,6 +19,7 @@ export const Section5 = () => {
         <Image
           src={Background}
           alt=""
+          style={{ width: "100%", height: "auto" }}
           //   height={228}
           width={1440}
           quality={100}
@@ -28,6 +29,7 @@ export const Section5 = () => {
         <Image
           src={BackgroundMobile}
           alt=""
+          style={{ width: "100%", height: "auto" }}
           //   height={228}
           width={440}
           quality={100}

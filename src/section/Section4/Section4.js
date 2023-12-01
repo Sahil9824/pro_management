@@ -16,6 +16,7 @@ export const Section4 = () => {
           <Image
             src={Background}
             alt=""
+            style={{ width: "100%" }}
             //   height={228}
             //   width={269}
             quality={100}
@@ -26,6 +27,7 @@ export const Section4 = () => {
         <Image
           src={BackgroundMobile}
           alt=""
+          style={{ width: "100%", height: "auto" }}
           //   height={228}
           //   width={269}
           quality={100}

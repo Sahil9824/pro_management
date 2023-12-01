@@ -6,8 +6,20 @@
 
   .backgroundWrap {
     position: absolute;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+    }
 
     .backgroundImageDesktop {
+      width: inherit;
       display: flex;
     }
 
@@ -235,11 +247,16 @@
     .backgroundWrap {
       position: absolute;
 
+      img {
+        object-fit: cover;
+      }
+
       .backgroundImageDesktop {
         display: none;
       }
 
       .backgroundImageMobile {
+        width: inherit;
         display: flex;
       }
     }

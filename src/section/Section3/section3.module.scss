@@ -6,6 +6,15 @@
 
   .imageWrap {
     left: -34px;
+    // position: absolute;
+    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .imageWrapMobile {
@@ -172,8 +181,10 @@
 
     .imageWrapMobile {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      width: inherit;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .secondPart {
