@@ -13,6 +13,9 @@
   .secondPart {
     padding-left: 8.3%;
     padding-right: 8.3%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 
     .titleWrap {
       margin-top: 64px;
@@ -55,9 +58,9 @@
         margin-top: 8px;
         width: 70%;
         font-family: "DM Sans";
-        font-size: 24px;
+        font-size: clamp(17px, 2vw, 24px);
         font-weight: 400;
-        line-height: 34px;
+        line-height: clamp(17px, 2.3vw, 34px);
         text-align: center;
       }
       .titleMobile {
@@ -70,13 +73,19 @@
     display: flex;
     padding-left: 4.9%;
     padding-right: 4.9%;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1580px;
     width: 100%;
     margin-top: 44px;
     justify-content: space-between;
 
     .firstCardWrap {
-      height: 374px;
       width: 400px;
+      height: auto;
+      width: 100%;
+      max-width: 400px;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -89,6 +98,7 @@
       .imageWrap {
         display: flex;
         margin-top: 40px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -96,7 +106,8 @@
 
       .heading {
         font-family: "Space Grotesk";
-        font-size: 26px;
+        font-size: clamp(14px, 1.8vw, 26px);
+
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0em;
@@ -106,7 +117,8 @@
       .description {
         margin-top: 24px;
         font-family: "DM Sans";
-        font-size: 18px;
+        font-size: clamp(14px, 1.4vw, 18px);
+
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0em;
@@ -115,8 +127,10 @@
     }
 
     .secondCardWrap {
-      height: 374px;
       width: 400px;
+      height: auto;
+      width: 100%;
+      max-width: 400px;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -129,6 +143,7 @@
       .imageWrap {
         display: flex;
         margin-top: 40px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -136,7 +151,8 @@
 
       .heading {
         font-family: "Space Grotesk";
-        font-size: 26px;
+        font-size: clamp(14px, 1.8vw, 26px);
+
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0em;
@@ -146,7 +162,8 @@
       .description {
         margin-top: 24px;
         font-family: "DM Sans";
-        font-size: 18px;
+        font-size: clamp(14px, 1.4vw, 18px);
+
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0em;
@@ -155,8 +172,10 @@
     }
 
     .thirdCardWrap {
-      height: 374px;
       width: 400px;
+      height: auto;
+      width: 100%;
+      max-width: 400px;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -169,6 +188,7 @@
       .imageWrap {
         display: flex;
         margin-top: 40px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -176,7 +196,8 @@
 
       .heading {
         font-family: "Space Grotesk";
-        font-size: 26px;
+        font-size: clamp(14px, 1.8vw, 26px);
+
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0em;
@@ -186,7 +207,8 @@
       .description {
         margin-top: 24px;
         font-family: "DM Sans";
-        font-size: 18px;
+        font-size: clamp(14px, 1.4vw, 18px);
+
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0em;
@@ -206,7 +228,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .main {
     margin-top: 15px;
 

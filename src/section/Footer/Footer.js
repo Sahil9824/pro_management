@@ -33,7 +33,7 @@ export const Footer = () => {
         <li>Rules & Regulations</li>
         <li>Auto Trading Services Agreement</li>
       </ul>
-      <p className={style.italicPara}>
+      <div className={style.italicPara}>
         <h4 className={style.normalHeading}>
           {" "}
           Pro Management Capital brand is a software development company and
@@ -98,7 +98,7 @@ export const Footer = () => {
         trademark holders are not affiliated with Traders Mirror, our products,
         or our websites. They do not sponsor or endorse Traders Mirror or any of
         our products.
-      </p>
+      </div>
 
       <div className={style.gradientbuttonWrapM}>
         <h3>Copyright © 2023 – All rights reserved.</h3>

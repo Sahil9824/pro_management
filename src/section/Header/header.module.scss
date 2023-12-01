@@ -11,7 +11,7 @@
 
   .logoListWrap {
     display: flex;
-    width: 53.61%;
+    width: 55%;
     // justify-content: space-between;
     align-items: center;
 
@@ -32,6 +32,7 @@
     .listWrap {
       width: 100%;
       display: flex;
+      max-width: 700px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -39,7 +40,8 @@
       li {
         list-style-type: none;
         font-family: "Poppins", sans-serif;
-        font-size: 16px;
+        // font-size: 16px;
+        font-size: clamp(10px, 1.2vw, 16px);
         font-weight: 500;
         line-height: 24px;
       }
@@ -47,13 +49,17 @@
   }
 
   .linksWrap {
-    width: 27.13%;
+    width: 33.13%;
+    max-width: 362px;
     display: flex;
-    justify-content: space-between;
+    gap: 22px;
+    justify-content: space-evenly;
 
     .buttonWrapOne {
-      width: 140px;
+      max-width: 140px;
       height: 60px;
+      padding-left: 8.1%;
+      padding-right: 8.1%;
       border: 2px solid transparent;
       border-color: #5532fa;
       border-image-slice: 1;
@@ -64,7 +70,7 @@
 
       h3 {
         font-family: "Inter";
-        font-size: 20px;
+        font-size: clamp(14px, 1.4vw, 20px);
         font-weight: 400;
         line-height: 40px;
         letter-spacing: 0em;
@@ -73,8 +79,10 @@
     }
 
     .buttonWrapTwo {
-      width: 200px;
+      max-width: 200px;
       height: 60px;
+      padding-left: 7%;
+      padding-right: 7%;
       background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
       border-radius: 50px;
       display: flex;
@@ -82,9 +90,10 @@
       justify-content: center;
 
       h3 {
-        font-family: Inter;
-        font-size: 20px;
+        font-family: "Inter";
+        font-size: clamp(14px, 1.4vw, 20px);
         font-weight: 400;
+        text-align: center;
 
         br {
           display: none;
@@ -94,7 +103,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .Wrap {
     height: 80px;
     width: 100%;
@@ -132,6 +141,7 @@
 
     .linksWrap {
       width: 51.16%;
+      max-width: 220px;
       display: flex;
       gap: 11px;
       justify-content: space-between;

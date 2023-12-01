@@ -56,8 +56,9 @@ export const Section3 = () => {
             <Image
               src={ScreenOne}
               alt=""
-              height={290}
-              width={354}
+              style={{ width: "100%", height: "auto" }}
+              // height={290}
+              // width={354}
               quality={100}
             />
           </div>
@@ -77,8 +78,9 @@ export const Section3 = () => {
             <Image
               src={ScreenTwo}
               alt=""
-              height={290}
-              width={354}
+              style={{ width: "100%", height: "auto" }}
+              // height={290}
+              // width={354}
               quality={100}
             />
           </div>
@@ -98,8 +100,9 @@ export const Section3 = () => {
             <Image
               src={ScreenThree}
               alt=""
-              height={290}
-              width={354}
+              style={{ width: "100%", height: "auto" }}
+              // height={290}
+              // width={354}
               quality={100}
             />
           </div>

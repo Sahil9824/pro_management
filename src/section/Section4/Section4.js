@@ -5,7 +5,7 @@ import BackgroundMobile from "../../Assets/Section4BgMobile.png";
 import Image from "next/image";
 import ScreenOne from "../../Assets/dashboard.png";
 import ScreenTwo from "../../Assets/easyTouch.png";
-import ScreenThree from "../../Assets/crypto.png";
+import ScreenThree from "../../Assets/cryptoNew.png";
 
 export const Section4 = () => {
   return (
@@ -55,56 +55,69 @@ export const Section4 = () => {
 
       <div className={style.thirdPart}>
         <div className={style.firstCardWrap}>
-          <p className={style.heading}>Why Choose to Invest With Us</p>
-          <h3 className={style.description}>
-            Investors, lacking the time and expertise for hands-on trading, can
-            delegate the process to Fund Managers—trusted professionals with the
-            necessary skills and experience.
-          </h3>
-          <div className={style.imageWrap}>
+          <div className={style.headingWrap}>
+            <p className={style.heading}>Why Choose to Invest With Us</p>
+            <h3 className={style.description}>
+              Investors, lacking the time and expertise for hands-on trading,
+              can delegate the process to Fund Managers—trusted professionals
+              with the necessary skills and experience.
+            </h3>
+          </div>
+          <div className={style.imageWrapOne}>
             <Image
               src={ScreenOne}
               cl
               alt=""
-              height={184}
-              width={184}
+              style={{ width: "100%", height: "auto" }}
+              // height={184}
+              // width={184}
               quality={100}
             />
           </div>
         </div>
         <div className={style.firstCardWrap}>
-          <p className={style.heading}>Explore Our Fund Management Accounts</p>
-          <h3 className={style.description}>
-            Investors recognize the potential for lucrative returns from our
-            outstanding fund management accounts.
-          </h3>
+          <div className={style.headingWrap}>
+            <p className={style.heading}>
+              Explore Our Fund Management Accounts
+            </p>
+            <h3 className={style.description}>
+              Investors recognize the potential for lucrative returns from our
+              outstanding fund management accounts.
+              <br></br>
+            </h3>
+          </div>
           <div className={style.imageWrapTwo}>
             <Image
               src={ScreenTwo}
               cl
               alt=""
-              height={184}
-              width={184}
+              style={{ width: "100%", height: "auto" }}
+              // height={184}
+              // width={184}
               quality={100}
             />
           </div>
         </div>
         <div className={style.firstCardWrap}>
-          <p className={style.heading}>
-            With a Competitive Performance fee model
-          </p>
-          <h3 className={style.description}>
-            We apply a 10% performance fee on profits, automatically deducted
-            from your account by the broker partner connected to the PAMM
-            accounts.
-          </h3>
+          <div className={style.headingWrap}>
+            <p className={style.heading}>
+              With a Competitive Performance fee model
+            </p>
+            <h3 className={style.description}>
+              We apply a 10% performance fee on profits, automatically deducted
+              from your account by the broker partner connected to the PAMM
+              accounts.
+            </h3>
+          </div>
+
           <div className={style.imageWrapThree}>
             <Image
               src={ScreenThree}
               cl
               alt=""
-              height={231}
-              width={231}
+              style={{ width: "100%", height: "auto" }}
+              // height={231}
+              // width={231}
               quality={100}
             />
           </div>

@@ -1,5 +1,8 @@
 .main {
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1700px;
 
   .imageWrap {
     left: -34px;
@@ -51,9 +54,10 @@
         margin-top: 28px;
         width: 100%;
         font-family: "DM Sans";
-        font-size: 24px;
+        font-size: clamp(18px, 2vw, 24px);
         font-weight: 400;
-        line-height: 34px;
+        line-height: clamp(27px, 2.3vw, 34px);
+
         text-align: left;
       }
     }
@@ -61,16 +65,18 @@
 
   .thirdPart {
     display: flex;
-    padding-left: 10.9%;
-    padding-right: 10.9%;
+    padding-left: 7.4%;
+    padding-right: 5.4%;
+    gap: 25px;
     width: 100%;
     margin-top: 44px;
     justify-content: space-between;
 
     .firstCardWrap {
-      height: 531px;
+      height: auto;
+      max-height: 531px;
       max-width: 354px;
-      max-width: 354px;
+      width: 100%;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
@@ -82,9 +88,9 @@
         display: flex;
         margin-top: 18px;
         align-items: center;
+        width: 100%;
         justify-content: center;
         max-width: 354px;
-        height: 290px;
       }
 
       .Line {
@@ -96,7 +102,7 @@
       .heading {
         font-family: "DM Sans";
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: clamp(14px, 1.4vw, 20px);
         font-weight: 700;
         color: #000;
         line-height: 24px;
@@ -105,7 +111,7 @@
       }
       .description {
         font-family: "Inter";
-        font-size: 12px;
+        font-size: clamp(9px, 1.2vw, 12px);
         margin-top: 26px;
         color: #000;
         font-weight: 400;
@@ -122,8 +128,10 @@
         align-items: center;
         .buttonWrap {
           margin-left: 2.2%;
-          width: 200px;
-          height: 60px;
+          width: fit-content;
+          padding-left: 16px;
+          padding-right: 16px;
+          height: auto;
           border: 2px solid transparent;
           border-color: #000000;
           border-image-slice: 1;
@@ -134,7 +142,7 @@
 
           h3 {
             font-family: "Inter";
-            font-size: 20px;
+            font-size: clamp(14px, 1.4vw, 20px);
             font-weight: 400;
             color: #000000;
             line-height: 40px;
@@ -147,7 +155,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .main {
     margin-top: 15px;
 

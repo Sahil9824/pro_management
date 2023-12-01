@@ -77,7 +77,7 @@ export const Section5 = () => {
           <p className={style.heading}>3. Connect</p>
           <h3 className={style.description}>
             Link your account to our PAMM copy solution, connecting it to the
-            chosen fund management account mentioned earlier.
+            chosen fund management account to our PAMM mentioned earlier.
           </h3>
           <div className={style.imageWrap}>
             <ConnectIcon />

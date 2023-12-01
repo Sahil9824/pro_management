@@ -49,8 +49,9 @@ export const Section6 = () => {
             <Image
               src={BackgroundImage}
               alt=""
-              height={345}
-              width={221}
+              style={{ width: "100%", height: "auto" }}
+              // height={345}
+              // width={221}
               quality={100}
             />
           </div>
