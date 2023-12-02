@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "../src/section/Header/Header";
+import style from "../styles/Home.module.css";
 import { Section1 } from "../src/section/Section1/Section1";
 import { Section2 } from "../src/section/Section2/Section2";
 import { Section3 } from "../src/section/Section3/Section3";
@@ -10,7 +11,7 @@ import { Footer } from "../src/section/Footer/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className={style.main}>
       {/* <Header /> */}
       <Section1 />
       <Section2 />
