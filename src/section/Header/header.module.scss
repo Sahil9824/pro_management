@@ -3,6 +3,8 @@
   width: 100%;
   display: flex;
   padding-right: 40px;
+  position: relative;
+  z-index: 2;
   padding-left: 52px;
   flex-direction: row;
   justify-content: space-between;
