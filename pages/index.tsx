@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../src/section/Header/Header";
 import style from "../styles/Home.module.css";
 import { Section1 } from "../src/section/Section1/Section1";
@@ -10,6 +10,11 @@ import { Section6 } from "../src/section/Section6/Section6";
 import { Footer } from "../src/section/Footer/Footer";
 
 const App = () => {
+  useEffect(() => {
+    // Scroll to the top of the window on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={style.main}>
       {/* <Header /> */}
