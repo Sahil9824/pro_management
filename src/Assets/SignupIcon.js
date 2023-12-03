@@ -1,7 +1,7 @@
 import * as React from "react";
 const SignupIcon = (props) => (
   <svg
-    width={130}
+    width={120}
     height={124}
     viewBox="0 0 130 124"
     fill="none"

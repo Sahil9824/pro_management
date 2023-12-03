@@ -1,93 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import style from "../..//section/Section6/section6.module.scss";
 import Background from "../../Assets/Section6Bg.png";
 import BackgroundMobile from "../../Assets/Section6BgMobile.png";
 import BackgroundImage from "../../Assets/Section6Image.png";
-import BackgroundImageMobile from "../../Assets/Section6ImageMobile.png";
+import BackgroundImageMobile from "../../Assets/Section6ImageforMobile.png";
+// import BackgroundImageMobile from "../../Assets/Section6ImageMobile.png";
 import Image from "next/image";
 import ContactIcon from "../../Assets/ContactIcon";
 import EmailIcon from "../../Assets/EmailIcon";
 import PhoneIcon from "../../Assets/PhoneIcon";
 import { Header } from "../Header/Header";
-import { Power3, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Section6 = () => {
-  const addRefs = (index, arrRef) => (el) => {
-    arrRef.current[index] = el;
-  };
-
-  const refsArray = useRef([]);
-  const titlesArray = useRef([]);
-  const boxRefs = useRef([]);
-
-  let containerRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      titlesArray.current,
-      { y: 45, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: Power3.easeOut,
-        duration: 1,
-        stagger: {
-          amount: 0.3,
-        },
-        scrollTrigger: {
-          trigger: containerRef.current,
-          toggleActions: "play none none none",
-          start: "top top+=70%",
-          // markers: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      boxRefs.current,
-      { yPercent: 50, opacity: 0 },
-      {
-        yPercent: 0,
-        opacity: 1,
-
-        ease: Power3.easeOut,
-        duration: 1,
-        delay: 0.2,
-        stagger: {
-          amount: 0.3,
-        },
-        scrollTrigger: {
-          trigger: containerRef.current,
-          toggleActions: "play none none none",
-          start: "top top+=12%",
-          // markers: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      refsArray.current,
-      { y: 45, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: Power3.easeOut,
-        duration: 1.6,
-        stagger: {
-          amount: 0.3,
-        },
-        scrollTrigger: {
-          trigger: containerRef.current,
-          toggleActions: "play none none none",
-          start: "top top+=12%",
-          // markers: true,
-        },
-      }
-    );
-  }, []);
   return (
-    <div className={style.main} ref={containerRef}>
+    <div className={style.main}>
       <div className={style.backgroundWrap}>
         <Image
           src={Background}
@@ -110,21 +36,19 @@ export const Section6 = () => {
       </div>
 
       <div className={style.firstPart} id="downloadBook">
-        <h3 className={style.titleOne} ref={addRefs(0, titlesArray)}>
-          Download Our{" "}
-        </h3>
-        <h3 className={style.titleTwo} ref={addRefs(1, titlesArray)}>
+        <h3 className={style.titleOne}>Download Our </h3>
+        <h3 className={style.titleTwo}>
           <p>FREE</p> E-Book
         </h3>
       </div>
 
-      <div className={style.secondPart} ref={addRefs(0, refsArray)}>
-        <div className={style.textWrap} ref={addRefs(0, boxRefs)}>
+      <div className={style.secondPart}>
+        <div className={style.textWrap}>
           <h3 className={style.textOne}>Download our Trading Course</h3>
           <h3 className={style.textTwo}>FREE, Worth $294.99</h3>
         </div>
 
-        <div className={style.imageContainer} ref={addRefs(1, boxRefs)}>
+        <div className={style.imageContainer}>
           <div className={style.imageWrap}>
             <Image
               src={BackgroundImage}
@@ -140,13 +64,13 @@ export const Section6 = () => {
               src={BackgroundImageMobile}
               alt=""
               //   height={150}
-              width={96}
+              // width={96}
               quality={100}
             />
           </div>
         </div>
 
-        <div className={style.detailsWrap} ref={addRefs(2, boxRefs)}>
+        <div className={style.detailsWrap}>
           <h3 className={style.detailTitle}>Fill Your Details Below:</h3>
 
           <div className={style.buttonWrapContainer}>
@@ -182,8 +106,9 @@ export const Section6 = () => {
               <Image
                 src={BackgroundImageMobile}
                 alt=""
-                //   height={150}
-                width={96}
+                style={{ maxWidth: 96, maxHeight: 150, borderRadius: 10 }}
+                // height={150}
+                // width={96}
                 quality={100}
               />
             </div>

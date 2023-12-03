@@ -2,6 +2,8 @@
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
   max-width: 1700px;
 
   .imageWrap {
@@ -49,12 +51,9 @@
         text-transform: uppercase;
         font-size: 48px;
         font-weight: 700;
-        background: linear-gradient(
-          273.69deg,
-          #5532fa 0%,
-          #5a35fa 0.01%,
-          #a770ff 97.93%
-        );
+        background: linear-gradient(270.95deg, #5532fa 1.25%, #a770ff 99.1%),
+          linear-gradient(271.3deg, #5532fa 44.28%, #a770ff 98.78%);
+
         -webkit-background-clip: text;
         color: transparent;
         text-align: left;
@@ -74,9 +73,11 @@
 
   .thirdPart {
     display: flex;
-    padding-left: 7.4%;
-    padding-right: 5.4%;
+    // padding-left: 7.4%;
+    // padding-right: 5.4%;
     gap: 25px;
+    align-self: center;
+    max-width: 1190px;
     width: 100%;
     margin-top: 44px;
     justify-content: space-between;
@@ -173,7 +174,7 @@
 
 @media (max-width: 800px) {
   .main {
-    margin-top: 15px;
+    margin-top: 40px;
 
     .imageWrap {
       display: none;
@@ -198,6 +199,7 @@
           text-transform: uppercase;
           font-size: 32px;
           font-weight: 700;
+          color: #ffffff;
           text-align: left;
 
           p {
@@ -206,14 +208,8 @@
             text-transform: uppercase;
             font-size: 32px;
             font-weight: 700;
-            background: linear-gradient(
-              273.69deg,
-              #5532fa 0%,
-              #5a35fa 0.01%,
-              #a770ff 97.93%
-            );
             -webkit-background-clip: text;
-            color: transparent;
+            color: #ffffff;
             text-align: left;
           }
         }
@@ -222,12 +218,8 @@
           text-transform: uppercase;
           font-size: 32px;
           font-weight: 700;
-          background: linear-gradient(
-            273.69deg,
-            #5532fa 0%,
-            #5a35fa 0.01%,
-            #a770ff 97.93%
-          );
+          background: linear-gradient(270.95deg, #5532fa 1.25%, #a770ff 99.1%),
+            linear-gradient(271.3deg, #5532fa 44.28%, #a770ff 98.78%);
           -webkit-background-clip: text;
           color: transparent;
           text-align: left;
@@ -252,20 +244,21 @@
       padding-left: 8.8%;
       padding-right: 8.8%;
       align-items: center;
+      max-width: 1190px;
       width: 100%;
       margin-top: 44px;
       justify-content: space-between;
 
       .firstCardWrap {
-        height: 531px;
+        height: 504px;
         max-width: 354px;
         max-width: 354px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         background: rgba(255, 255, 255, 1);
-        padding-top: 26px;
-        padding-bottom: 21px;
+        padding-top: 16px;
+        padding-bottom: 16px;
 
         .imageWrap {
           display: flex;
@@ -311,10 +304,9 @@
           align-items: center;
           .buttonWrap {
             margin-left: 2.2%;
-            width: 200px;
+            width: 140px;
             height: 60px;
-            border: 2px solid transparent;
-            border-color: #000000;
+            border: 2px solid rgba(143, 143, 143, 0.6);
             border-image-slice: 1;
             border-radius: 50px;
             display: flex;
