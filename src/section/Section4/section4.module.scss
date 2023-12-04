@@ -2,18 +2,25 @@
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 6.31%;
+  padding-right: 6.31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1700px;
 
   .imageWrap {
     display: flex;
     width: inherit;
     background-size: cover;
+    margin-left: -6.31%;
+    margin-right: -6.31%;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     background-position: center;
-    padding-left: 7.6%;
-    padding-right: 7.6%;
+    padding-left: 9.6%;
+    padding-right: 9.6%;
 
     img {
       object-fit: contain;
@@ -25,11 +32,11 @@
   }
 
   .secondPart {
-    padding-left: 8.3%;
-    padding-right: 8.3%;
+    padding-left: 2.2%;
+    padding-right: 2.2%;
 
     .titleWrap {
-      margin-top: 64px;
+      margin-top: 44px;
       .titleOne {
         font-family: "Space Grotesk";
         text-transform: uppercase;
@@ -47,23 +54,25 @@
           font-weight: 700;
         }
       }
+
+      .titleOneMobile {
+        display: none;
+      }
+      .titleTwoMobile {
+        display: none;
+      }
       .titleTwo {
         font-family: "Space Grotesk";
         text-transform: uppercase;
         font-size: 48px;
         font-weight: 700;
-        background: linear-gradient(
-          273.69deg,
-          #5532fa 0%,
-          #5a35fa 0.01%,
-          #a770ff 97.93%
-        );
+        background: linear-gradient(271.03deg, #5532fa 16.59%, #a770ff 99.03%);
         -webkit-background-clip: text;
         color: transparent;
         text-align: left;
       }
       .titleThree {
-        margin-top: 28px;
+        margin-top: 14px;
         width: 100%;
         font-family: "DM Sans";
         font-size: clamp(17px, 2vw, 24px);
@@ -77,10 +86,11 @@
 
   .thirdPart {
     display: flex;
-    padding-left: 4.9%;
-    padding-right: 4.9%;
+    padding-left: 2.21%;
+    padding-right: 2.21%;
     width: 100%;
-    gap: 30px;
+    max-width: 1353px;
+    gap: 44px;
     margin-top: 44px;
     justify-content: space-between;
 
@@ -153,9 +163,42 @@
   }
 }
 
+@media (min-width: 950px) and (max-width: 1120px) {
+  .main {
+    margin-top: 0px;
+
+    .imageWrap {
+      padding-left: 9%;
+      padding-right: 9%;
+    }
+  }
+}
+@media (min-width: 800px) and (max-width: 949px) {
+  .main {
+    margin-top: 0px;
+
+    .imageWrap {
+      padding-left: 0%;
+      padding-right: 0%;
+
+      img {
+        object-fit: contain;
+        // height: fit-content;
+      }
+    }
+
+    .secondPart {
+      margin-top: 0px;
+
+      .titleWrap {
+        margin-top: 0px;
+      }
+    }
+  }
+}
 @media (max-width: 800px) {
   .main {
-    margin-top: 15px;
+    margin-top: 56px;
 
     .imageWrap {
       display: none;
@@ -187,18 +230,24 @@
       .titleWrap {
         margin-top: 9px;
         .titleOne {
+          display: none;
+        }
+
+        .titleOneMobile {
+          display: inline;
           font-family: "Space Grotesk";
           text-transform: uppercase;
           font-size: 32px;
+          width: 100%;
           font-weight: 700;
+          white-space: nowrap;
           text-align: left;
 
           p {
-            display: flex;
+            display: inline;
             font-family: "Space Grotesk";
             text-transform: uppercase;
             font-size: 32px;
-            font-weight: 700;
             background: linear-gradient(
               273.69deg,
               #5532fa 0%,
@@ -207,10 +256,14 @@
             );
             -webkit-background-clip: text;
             color: transparent;
-            text-align: left;
+            font-weight: 700;
           }
         }
         .titleTwo {
+          display: none;
+        }
+        .titleTwoMobile {
+          display: inline;
           font-family: "Space Grotesk";
           text-transform: uppercase;
           font-size: 32px;
@@ -251,7 +304,7 @@
 
       .firstCardWrap {
         height: 458px;
-        width: 345px;
+        max-width: 354px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -272,25 +325,27 @@
           margin-top: -16px;
         }
 
-        .heading {
-          font-family: "Space Grotesk";
-          text-transform: uppercase;
-          font-size: 26px;
-          font-weight: 700;
-          color: #fff;
-          line-height: 29.9px;
-          text-align: center;
-        }
-        .description {
-          width: 96%;
-          font-family: "DM Sans";
-          font-size: 16px;
-          margin-top: 22px;
-          color: #fff;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: 0em;
-          text-align: center;
+        .headingWrap {
+          .heading {
+            font-family: "Space Grotesk";
+            text-transform: uppercase;
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 29.9px;
+            text-align: center;
+          }
+          .description {
+            width: 96%;
+            font-family: "DM Sans";
+            font-size: 16px;
+            margin-top: 22px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
         }
       }
     }

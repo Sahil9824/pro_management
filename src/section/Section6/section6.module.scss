@@ -81,7 +81,7 @@
     margin-top: 61px;
     margin-left: 6.4%;
     width: 90%;
-    max-width: 1400px;
+    max-width: 1257px;
     align-self: center;
     margin-right: 6.4%;
     border-radius: 16px;
@@ -152,13 +152,7 @@
         line-height: 30px;
         letter-spacing: -0.02em;
         text-align: left;
-
-        background: linear-gradient(
-          273.69deg,
-          #5532fa 0%,
-          #5a35fa 0.01%,
-          #a770ff 97.93%
-        );
+        background: linear-gradient(90deg, #a770ff -2.61%, #5532fa 66.62%);
         -webkit-background-clip: text;
         color: transparent;
         text-align: left;
@@ -300,6 +294,7 @@
 
         p {
           display: inline;
+
           background: linear-gradient(
               180deg,
               #01b875 0%,
@@ -309,6 +304,7 @@
             linear-gradient(0deg, #ffffff, #ffffff);
           -webkit-background-clip: text;
           color: transparent;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
       }
     }
@@ -347,7 +343,7 @@
 
           .textOneM {
             font-family: "Manrope";
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 400;
             letter-spacing: 0em;
             text-align: center;
@@ -368,6 +364,7 @@
           }
 
           .imageWrapMobileM {
+            border-radius: 10px;
             display: flex;
           }
         }
@@ -389,13 +386,8 @@
           line-height: 30px;
           letter-spacing: -0.02em;
           text-align: left;
+          background: linear-gradient(90deg, #a770ff -2.61%, #5532fa 66.62%);
 
-          background: linear-gradient(
-            273.69deg,
-            #5532fa 0%,
-            #5a35fa 0.01%,
-            #a770ff 97.93%
-          );
           -webkit-background-clip: text;
           color: transparent;
           text-align: left;
@@ -439,7 +431,8 @@
             /* Style for the placeholder text */
             textarea::placeholder {
               font-family: "Manrope";
-              font-size: 16px;
+              font-size: 13px;
+              opacity: 0.5;
               font-weight: 400;
               line-height: 30px;
               letter-spacing: 0em;
@@ -459,7 +452,7 @@
             justify-content: center;
 
             h3 {
-              font-family: Inter;
+              font-family: "Inter";
               font-size: 16px;
               font-weight: 600;
               line-height: 40px;

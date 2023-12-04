@@ -1,69 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import style from "../..//section/Section3/section3.module.scss";
 import Background from "../../Assets/Section3Bg.png";
 import BackgroundMobile from "../../Assets/Section3BgMobile.png";
 import Image from "next/image";
-import ScreenOne from "../../Assets/statisticOne.png";
-import ScreenTwo from "../../Assets/statisticTwo.png";
-import ScreenThree from "../../Assets/statisticThree.png";
-import { Power3, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import ScreenOne from "../../Assets/GraphOne.png";
+import ScreenTwo from "../../Assets/GraphTwo.png";
+import ScreenThree from "../../Assets/GraphThree.png";
 
 export const Section3 = () => {
-  const addRefs = (index, arrRef) => (el) => {
-    arrRef.current[index] = el;
-  };
-
-  const refsArray = useRef([]);
-  const boxRefs = useRef([]);
-
-  let containerRef = useRef(null);
-  let boxcontainerRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      boxRefs.current,
-      { yPercent: 100, opacity: 0 },
-      {
-        yPercent: 0,
-        opacity: 1,
-
-        ease: Power3.easeOut,
-        duration: 1,
-        stagger: {
-          amount: 0.3,
-        },
-        scrollTrigger: {
-          trigger: boxcontainerRef.current,
-          toggleActions: "play none none none",
-          start: "top top+=50%",
-          // markers: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      refsArray.current,
-      { y: 45, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: Power3.easeOut,
-        duration: 1.6,
-        stagger: {
-          amount: 0.3,
-        },
-        scrollTrigger: {
-          trigger: boxcontainerRef.current,
-          toggleActions: "restart pause resume pause",
-          start: "top top+=100%",
-          // markers: true,
-        },
-      }
-    );
-  }, []);
-
   return (
     <div className={style.main}>
       <div className={style.imageWrap}>
@@ -87,15 +31,13 @@ export const Section3 = () => {
         />
       </div>
 
-      <div className={style.secondPart} id="copyAccount" ref={boxcontainerRef}>
+      <div className={style.secondPart} id="copyAccount">
         <div className={style.titleWrap}>
-          <h3 className={style.titleOne} ref={addRefs(0, refsArray)}>
+          <h3 className={style.titleOne}>
             Our Fund <p>Management</p>
           </h3>
-          <h3 className={style.titleTwo} ref={addRefs(1, refsArray)}>
-            copy accounts
-          </h3>
-          <p className={style.titleThree} ref={addRefs(2, refsArray)}>
+          <h3 className={style.titleTwo}>copy accounts</h3>
+          <p className={style.titleThree}>
             The fund management account operates in collaboration with our
             broker partners, utilizing PAMM Master accounts that facilitate the
             automatic linking of your account to our master account. This
@@ -109,10 +51,17 @@ export const Section3 = () => {
       </div>
 
       <div className={style.thirdPart}>
-        <div className={style.firstCardWrap} ref={addRefs(0, boxRefs)}>
+        <div className={style.firstCardWrap}>
           <p className={style.heading}>Alexander William Acc</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/alexander-william-acc-1/8367610",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenOne}
               alt=""
@@ -139,10 +88,17 @@ export const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className={style.firstCardWrap} ref={addRefs(1, boxRefs)}>
+        <div className={style.firstCardWrap}>
           <p className={style.heading}>ALGO TECH</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/algo-tech/10090527",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenTwo}
               alt=""
@@ -169,10 +125,17 @@ export const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className={style.firstCardWrap} ref={addRefs(2, boxRefs)}>
+        <div className={style.firstCardWrap}>
           <p className={style.heading}>Nova</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/nova/10424943",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenThree}
               alt=""

@@ -1,7 +1,7 @@
 import * as React from "react";
 const ConnectIcon = (props) => (
   <svg
-    width={130}
+    width={120}
     height={123}
     viewBox="0 0 130 123"
     fill="none"

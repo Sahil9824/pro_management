@@ -58,49 +58,49 @@ export const Footer = () => {
         <br />
         <h3 className={style.boldHeading}>SITE DISCLAIMER:</h3>
         Trades signals sent through this website are solely those of the
-        customers quoted. They do not represent the opinions of Traders Mirror
-        on whether to buy, sell, or hold particular investments. While Traders
-        Mirror tries to ensure that all of the information provided on this
-        website is kept up-to-date and accurate, we accept no responsibility for
-        any use made of the information provided. You agree not to hold Traders
-        Mirror liable for decisions and trades that are based on information
-        from this website. Traders Mirror cannot be held responsible for the
-        software, broker, or other issues that result in the failure to execute
-        a trade command. It is inherent upon you, the client, to make sure you
-        are aware of when trades have been taken, adjusted, or closed. The
-        purchase, sale, or advice regarding a particular investment can only be
-        performed by a licensed Broker/Dealer. Neither our website nor our
-        associates involved in the production and maintenance of these products
-        or this website is a registered Broker/Dealer or Investment Advisor in
-        any State or Federally-sanctioned jurisdiction. All purchasers of
-        products referenced on this site are encouraged to consult with a
-        licensed representative of their choice regarding any particular trade
-        or trading strategy. No representation is being made that any account
-        will or is likely to achieve profits or losses similar to those
-        discussed on this website. Please note that the servers&apos; names
-        listed on this website are not a recommendation nor an advertising made
-        by Traders Mirror. Traders Mirror is totally independent and has no
-        partnership with any brokers. You have to make your own due diligence
-        when selecting a broker.
+        customers quoted. They do not represent the opinions of Pro Management
+        Capital on whether to buy, sell, or hold particular investments. While
+        Traders Mirror tries to ensure that all of the information provided on
+        this website is kept up-to-date and accurate, we accept no
+        responsibility for any use made of the information provided. You agree
+        not to hold Traders Mirror liable for decisions and trades that are
+        based on information from this website. Pro Management Capital cannot be
+        held responsible for the software, broker, or other issues that result
+        in the failure to execute a trade command. It is inherent upon you, the
+        client, to make sure you are aware of when trades have been taken,
+        adjusted, or closed. The purchase, sale, or advice regarding a
+        particular investment can only be performed by a licensed Broker/Dealer.
+        Neither our website nor our associates involved in the production and
+        maintenance of these products or this website is a registered
+        Broker/Dealer or Investment Advisor in any State or Federally-sanctioned
+        jurisdiction. All purchasers of products referenced on this site are
+        encouraged to consult with a licensed representative of their choice
+        regarding any particular trade or trading strategy. No representation is
+        being made that any account will or is likely to achieve profits or
+        losses similar to those discussed on this website. Please note that the
+        servers&apos; names listed on this website are not a recommendation nor
+        an advertising made by Pro Management Capital. Pro Management Capital is
+        totally independent and has no partnership with any brokers. You have to
+        make your own due diligence when selecting a broker.
         <br />
         <br /> <h3 className={style.boldHeading}>SOFTWARE DISCLAIMER:</h3>{" "}
         Although rare, internet-based trading can involve technical risks
         related to, but not limited to, Internet connection, software, or
-        hardware failures or delays. Traders Mirror implements a backup system
-        to minimize such occurrences but is not responsible for any losses or
-        missed trading opportunities as a result of communication failures,
-        disruptions, or unexpected system failures.
+        hardware failures or delays. Pro Management Capital implements a backup
+        system to minimize such occurrences but is not responsible for any
+        losses or missed trading opportunities as a result of communication
+        failures, disruptions, or unexpected system failures.
         <br />
         <br />
         <h3 className={style.boldHeading}>TRADEMARKS DISCLAIMER:</h3> All
         product and company names are trademarks™ or registered® trademarks of
         their respective holders. Use of them does not imply any affiliation
         with or endorsement by them. Any product names, logos, brands, and other
-        trademarks or images featured or referred to within the Traders Mirror
-        website are the property of their respective trademark holders. These
-        trademark holders are not affiliated with Traders Mirror, our products,
-        or our websites. They do not sponsor or endorse Traders Mirror or any of
-        our products.
+        trademarks or images featured or referred to within the Pro Management
+        Capital website are the property of their respective trademark holders.
+        These trademark holders are not affiliated with Pro Management Capital,
+        our products, or our websites. They do not sponsor or endorse Pro
+        Management Capital or any of our products.
       </div>
 
       <div className={style.gradientbuttonWrapM}>

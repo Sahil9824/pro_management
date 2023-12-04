@@ -1,6 +1,7 @@
 .main {
   width: 100%;
   position: relative;
+  mix-blend-mode: difference;
 
   .backgroundWrap {
     position: absolute;
@@ -15,10 +16,12 @@
     z-index: 1;
 
     img {
-      object-fit: cover;
+      object-fit: contain;
+      // mix-blend-mode: multiply;
     }
 
     .backgroundImageDesktop {
+      mix-blend-mode: difference;
       display: flex;
     }
     .backgroundImageMobile {
@@ -65,6 +68,8 @@
       .textThree {
         font-family: "DM Sans";
         width: 68%;
+        max-width: 470px;
+        min-width: 330px;
         font-size: clamp(18px, 2vw, 28px);
         font-weight: 400;
       }
@@ -79,6 +84,13 @@
   }
 }
 
+@media (min-width: 800px) and (max-width: 1100px) {
+  .main {
+    .backgroundWrap {
+      left: 0px;
+    }
+  }
+}
 @media (max-width: 800px) {
   .main {
     width: 100%;
@@ -117,12 +129,15 @@
 
         .textOne {
           font-size: 32px;
+          line-height: 36.8px;
         }
         .textTwo {
           font-size: 32px;
+          line-height: 36.8px;
         }
         .textThree {
-          width: 70%;
+          width: 100%;
+          max-width: 280px;
           font-size: 16px;
           margin-top: 19px;
         }
