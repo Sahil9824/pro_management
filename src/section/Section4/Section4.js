@@ -37,11 +37,13 @@ export const Section4 = () => {
 
       <div className={style.secondPart} id="whyChoose">
         <div className={style.titleWrap}>
-          <h3 className={style.titleOne}>
+          <h3 className={style.titleOne}>WhY choose TO Our</h3>
+          <h3 className={style.titleTwo}> investment portfolios</h3>
+          <h3 className={style.titleOneMobile}>
             WhY choose TO
-            <br /> Our <p>investment </p>
+            <br /> Our <p>investment </p> <br />
           </h3>
-          <h3 className={style.titleTwo}>portfolios</h3>
+          <h3 className={style.titleTwoMobile}>portfolios</h3>
           <p className={style.titleThree}>
             Unlock the full potential of automated and diversified investing
             tailored to align with your financial goals and seize market

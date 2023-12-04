@@ -3,9 +3,9 @@ import style from "../..//section/Section3/section3.module.scss";
 import Background from "../../Assets/Section3Bg.png";
 import BackgroundMobile from "../../Assets/Section3BgMobile.png";
 import Image from "next/image";
-import ScreenOne from "../../Assets/statisticOne.png";
-import ScreenTwo from "../../Assets/statisticTwo.png";
-import ScreenThree from "../../Assets/statisticThree.png";
+import ScreenOne from "../../Assets/GraphOne.png";
+import ScreenTwo from "../../Assets/GraphTwo.png";
+import ScreenThree from "../../Assets/GraphThree.png";
 
 export const Section3 = () => {
   return (
@@ -53,8 +53,15 @@ export const Section3 = () => {
       <div className={style.thirdPart}>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Alexander William Acc</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/alexander-william-acc-1/8367610",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenOne}
               alt=""
@@ -83,8 +90,15 @@ export const Section3 = () => {
         </div>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>ALGO TECH</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/algo-tech/10090527",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenTwo}
               alt=""
@@ -113,8 +127,15 @@ export const Section3 = () => {
         </div>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Nova</p>
-          <div className={style.Line}></div>
-          <div className={style.imageWrap}>
+          <div
+            className={style.imageWrap}
+            onClick={() =>
+              window.open(
+                "https://www.myfxbook.com/members/alexfoster/nova/10424943",
+                "_blank"
+              )
+            }
+          >
             <Image
               src={ScreenThree}
               alt=""

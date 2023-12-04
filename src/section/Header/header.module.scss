@@ -46,11 +46,20 @@
         // font-size: 16px;
         font-size: clamp(10px, 1.2vw, 16px);
         font-weight: 500;
-        line-height: 24px;
+        // line-height: 24px;
         cursor: pointer;
 
         &:hover {
-          background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
+          // background: linear-gradient(
+          //   273.69deg,
+          //   #5532fa 0%,
+          //   #5a35fa 0.01%,
+          //   #a770ff 97.93%
+          // );
+          background: #3278ff;
+          transition: transform 0.3s ease;
+          -webkit-background-clip: text;
+          color: transparent;
           padding: 5px 0;
           border-radius: 5px;
         }
@@ -96,21 +105,23 @@
     }
 
     .buttonWrapTwo {
-      max-width: 200px;
+      max-width: 210px;
       height: 60px;
       padding-left: 7%;
       padding-right: 7%;
       background: linear-gradient(90deg, #5532fa -15%, #a770ff 151.67%);
       border-radius: 50px;
+      background-clip: padding-box;
+      border: 2px solid transparent;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
 
       &:hover {
-        background: linear-gradient(90deg, #5532fa -45%, #a770ff 50.67%);
-
-        scale: 1.1;
+        border: 2px solid #5532fa;
+        background: #000;
       }
 
       h3 {

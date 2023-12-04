@@ -5,6 +5,8 @@ import ScreenOne from "../../Assets/ScreenOnex.png";
 import ScreenTwo from "../../Assets/ScreenTwo.png";
 import ScreenThree from "../../Assets/ScreenThree.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import RightArrow from "../../Assets/RightArrow.svg";
+import RightArrowMobile from "../../Assets/RIghtArrowMobile.svg";
 
 export const Section2 = () => {
   return (
@@ -119,6 +121,26 @@ export const Section2 = () => {
               Pick and choose from our 3 fund management accounts to invest and
               copy
             </h3>
+            <div className={style.arrowWrap}>
+              <Image
+                src={RightArrow}
+                className={style.arrowDesktop}
+                alt=""
+                style={{ width: "100%", height: "auto" }}
+                // height={228}
+                // width={269}
+                quality={100}
+              />
+              <Image
+                src={RightArrowMobile}
+                className={style.arrowMobile}
+                alt=""
+                style={{ width: "auto", height: "100%", maxHeight: 84 }}
+                // height={228}
+                // width={269}
+                quality={100}
+              />
+            </div>
           </div>
           <div className={style.firstCardWrap}>
             <div className={style.imageWrap}>
@@ -136,6 +158,26 @@ export const Section2 = () => {
               Choose investment size, that will determine how your trades are
               executed from master account
             </h3>
+            <div className={style.arrowWrap}>
+              <Image
+                src={RightArrow}
+                className={style.arrowDesktop}
+                alt=""
+                style={{ width: "100%", height: "auto" }}
+                // height={228}
+                // width={269}
+                quality={100}
+              />
+              <Image
+                src={RightArrowMobile}
+                className={style.arrowMobile}
+                alt=""
+                style={{ width: "auto", height: "100%", maxHeight: 84 }}
+                // height={228}
+                // width={269}
+                quality={100}
+              />
+            </div>
           </div>
           <div className={style.firstCardWrap}>
             <div className={style.imageWrap}>
