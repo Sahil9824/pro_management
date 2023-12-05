@@ -5,7 +5,7 @@ import BackgroundMobile from "../../Assets/Section4BgMobileNew.png";
 import Image from "next/image";
 import ScreenOne from "../../Assets/DashboardNew.png";
 import ScreenTwo from "../../Assets/EasyTouchNew.png";
-import ScreenThree from "../../Assets/CryptoNew.png";
+import ScreenThree from "../../Assets/cryptoNew.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Section4 = () => {
@@ -34,7 +34,6 @@ export const Section4 = () => {
         </div>
       </div>
       <div className={style.imageWrapMobile}>
-
         <Image
           src={BackgroundMobile}
           alt=""
@@ -49,14 +48,12 @@ export const Section4 = () => {
             Master essential skills and tools, enriching your knowledge with our
             comprehensive courses.
           </p>
-   <AnchorLink href="#downloadBook">
-          <div className={style.buttonWrap}>
-            <h3 className={style.buttonTitle}>View Free E-book</h3>
-          </div>
- </AnchorLink>
+          <AnchorLink href="#downloadBook">
+            <div className={style.buttonWrap}>
+              <h3 className={style.buttonTitle}>View Free E-book</h3>
+            </div>
+          </AnchorLink>
         </div>
-
-
       </div>
 
       <div className={style.secondPart} id="whyChoose">
