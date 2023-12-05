@@ -1,12 +1,11 @@
 import React from "react";
 import style from "../..//section/Section4/section4.module.scss";
-import Background from "../../Assets/Section4Bg.png";
-// import BackgroundMobile from "../../Assets/Section4BgMobile.png";
+import Background from "../../Assets/Section4BgNew.png";
 import BackgroundMobile from "../../Assets/Section4BgMobileNew.png";
 import Image from "next/image";
-import ScreenOne from "../../Assets/dashboard.png";
-import ScreenTwo from "../../Assets/easyTouch.png";
-import ScreenThree from "../../Assets/cryptoNew.png";
+import ScreenOne from "../../Assets/DashboardNew.png";
+import ScreenTwo from "../../Assets/EasyTouchNew.png";
+import ScreenThree from "../../Assets/CryptoNew.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Section4 = () => {
@@ -23,16 +22,36 @@ export const Section4 = () => {
             quality={100}
           />
         </AnchorLink>
+        <div className={style.container}>
+          <h3>Master the Art of Trading</h3>
+          <p>
+            Master essential skills and tools, enriching your knowledge with our
+            comprehensive courses.
+          </p>
+          <div className={style.buttonWrap}>
+            <h3 className={style.buttonTitle}>View Free E-book</h3>
+          </div>
+        </div>
       </div>
       <div className={style.imageWrapMobile}>
         <Image
           src={BackgroundMobile}
           alt=""
-          style={{ width: "100%", height: "auto" }}
-          //   height={228}
-          //   width={269}
+          // style={{ width: "100%", height: "auto" }}
+          height={618}
+          width={409}
           quality={100}
         />
+        <div className={style.container}>
+          <h3>Master the Art of Trading</h3>
+          <p>
+            Master essential skills and tools, enriching your knowledge with our
+            comprehensive courses.
+          </p>
+          <div className={style.buttonWrap}>
+            <h3 className={style.buttonTitle}>View Free E-book</h3>
+          </div>
+        </div>
       </div>
 
       <div className={style.secondPart} id="whyChoose">

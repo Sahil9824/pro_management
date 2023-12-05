@@ -11,7 +11,9 @@
 
   .imageWrap {
     display: flex;
+    position: relative;
     width: inherit;
+
     background-size: cover;
     margin-left: -6.31%;
     margin-right: -6.31%;
@@ -24,6 +26,62 @@
 
     img {
       object-fit: contain;
+      max-height: 427px;
+    }
+
+    .container {
+      position: absolute;
+      max-width: 409px;
+      width: 100%;
+      right: 22%;
+      // transform: translateY(50%) translateX(50%) !important;
+      transform: translate(50%, 12%);
+
+      h3 {
+        font-family: "Space Grotesk";
+        font-size: clamp(20px, 2vw, 36px);
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      p {
+        font-family: "DM Sans";
+        margin-top: 7.1%;
+        font-size: clamp(14px, 1.5vw, 20px);
+        font-weight: 400;
+        // line-height: 28px;
+        letter-spacing: -0.01em;
+        text-align: left;
+      }
+
+      .buttonWrap {
+        width: 240px;
+        margin-top: 7.1%;
+        height: 60px;
+        border: 2px solid #5532fa;
+        border-image-slice: 1;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #5532fa;
+        }
+
+        .buttonTitle {
+          font-family: "Inter";
+          font-size: 20px;
+          text-transform: none;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -100,6 +158,7 @@
       width: 100%;
       max-width: 400px;
       border-radius: 30px;
+      gap: 24px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -108,13 +167,14 @@
       padding-top: 40px;
       padding-left: 34px;
       padding-right: 35px;
-      padding-bottom: 10px;
+      padding-bottom: 40px;
 
       .imageWrapOne {
         display: flex;
         // margin-top: 18px;
-        width: 100%;
-        max-width: 184px;
+        width: 85%;
+        max-width: 120px;
+        max-width: 107px;
         // min-width: 151px;
         align-items: center;
         justify-content: center;
@@ -123,8 +183,9 @@
       .imageWrapTwo {
         display: flex;
         // margin-top: 60px;
-        width: 100%;
-        max-width: 184px;
+        width: 85%;
+        max-width: 107px;
+        max-width: 120px;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -132,8 +193,9 @@
       .imageWrapThree {
         display: flex;
         // margin-top: 18px;
-        width: 100%;
-        max-width: 181px;
+
+        width: 85%;
+        max-width: 120px;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -171,6 +233,62 @@
       padding-left: 9%;
       padding-right: 9%;
     }
+
+    .container {
+      position: absolute;
+      max-width: 350px !important;
+      width: 43% !important;
+      left: unset !important;
+      right: 6% !important;
+      // transform: translateY(50%) translateX(50%) !important;
+      transform: translate(0%, 11%) !important;
+
+      h3 {
+        font-family: "Space Grotesk";
+        font-size: clamp(20px, 1.5vw, 36px) !important;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      p {
+        font-family: "DM Sans";
+        margin-top: 7.1%;
+
+        font-size: clamp(14px, 1.5vw, 20px) !important;
+        font-weight: 400;
+        // line-height: 28px;
+        letter-spacing: -0.01em;
+        text-align: left;
+      }
+
+      .buttonWrap {
+        width: 180px !important;
+        margin-top: 7.1%;
+        height: 50px !important;
+        border: 2px solid #5532fa;
+        border-image-slice: 1;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #5532fa;
+        }
+
+        .buttonTitle {
+          font-family: "Inter";
+          font-size: 15px !important;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 @media (min-width: 800px) and (max-width: 949px) {
@@ -187,6 +305,62 @@
       }
     }
 
+    .container {
+      position: absolute;
+      max-width: 350px !important;
+      width: 43% !important;
+      left: unset !important;
+      right: 0% !important;
+      // transform: translateY(50%) translateX(50%) !important;
+      transform: translate(0%, 11%) !important;
+
+      h3 {
+        font-family: "Space Grotesk";
+        font-size: clamp(20px, 1.5vw, 36px) !important;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      p {
+        font-family: "DM Sans";
+        margin-top: 7.1%;
+
+        font-size: clamp(14px, 1.5vw, 20px) !important;
+        font-weight: 400;
+        // line-height: 28px;
+        letter-spacing: -0.01em;
+        text-align: left;
+      }
+
+      .buttonWrap {
+        width: 180px !important;
+        margin-top: 7.1%;
+        height: 50px !important;
+        border: 2px solid #5532fa;
+        border-image-slice: 1;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #5532fa;
+        }
+
+        .buttonTitle {
+          font-family: "Inter";
+          font-size: 15px !important;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+
     .secondPart {
       margin-top: 0px;
 
@@ -199,14 +373,15 @@
 @media (max-width: 800px) {
   .main {
     margin-top: 56px;
+    padding-left: 0%;
+    padding-right: 0%;
 
     .imageWrap {
       display: none;
     }
 
     .imageWrapMobile {
-      padding-left: 10.5%;
-      padding-right: 8.2%;
+      position: relative;
       border-top-right-radius: 16px;
       border-top-left-radius: 16px;
       display: flex;
@@ -219,6 +394,72 @@
 
       img {
         object-fit: contain;
+        margin-left: 16.5%;
+        margin-right: 8.2%;
+      }
+
+      .container {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        align-self: center;
+        align-items: center;
+        width: 100%;
+
+        h3 {
+          font-family: "Space Grotesk";
+          font-size: 32px;
+          max-width: 283px;
+
+          font-weight: 700;
+          line-height: 41px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        p {
+          font-family: "DM Sans";
+          margin-top: 30px;
+          font-size: 16px;
+          max-width: 283px;
+
+          font-weight: 400;
+          // line-height: 28px;
+          letter-spacing: -0.01em;
+          text-align: center;
+        }
+
+        .buttonWrap {
+          width: 240px;
+          margin-top: 30px;
+          height: 60px;
+          border: 2px solid #5532fa;
+          border-image-slice: 1;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: #5532fa;
+          }
+
+          .buttonTitle {
+            font-family: "Inter";
+            font-size: 20px;
+            text-transform: none;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+        }
       }
     }
 
@@ -311,18 +552,21 @@
         align-items: center;
         background: rgba(25, 25, 25, 1);
         padding-top: 45px;
-        padding-bottom: 21px;
+        padding-bottom: 45px;
         padding-left: 37px;
         padding-right: 34px;
 
         .imageWrap {
-          margin-top: 9px;
+          max-width: 110px;
+          max-height: 104px;
         }
         .imageWrapTwo {
-          margin-top: 22px;
+          max-width: 110px;
+          max-height: 104px;
         }
         .imageWrapThree {
-          margin-top: -16px;
+          max-width: 110px;
+          max-height: 104px;
         }
 
         .headingWrap {

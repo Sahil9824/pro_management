@@ -1,8 +1,8 @@
 import React from "react";
 import style from "../..//section/Section6/section6.module.scss";
-import Background from "../../Assets/Section6Bg.png";
-import BackgroundMobile from "../../Assets/Section6BgMobile.png";
-import BackgroundImage from "../../Assets/Section6Image.png";
+import Background from "../../Assets/Section6BgNew.png";
+import BackgroundMobile from "../../Assets/Section6BgMobileNew.png";
+import BackgroundImage from "../../Assets/Section6ImageforMobile.png";
 import BackgroundImageMobile from "../../Assets/Section6ImageforMobile.png";
 // import BackgroundImageMobile from "../../Assets/Section6ImageMobile.png";
 import Image from "next/image";
@@ -53,7 +53,7 @@ export const Section6 = () => {
             <Image
               src={BackgroundImage}
               alt=""
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto", borderRadius: 10 }}
               // height={345}
               // width={221}
               quality={100}
