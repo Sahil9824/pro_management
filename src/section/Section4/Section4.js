@@ -34,6 +34,7 @@ export const Section4 = () => {
         </div>
       </div>
       <div className={style.imageWrapMobile}>
+
         <Image
           src={BackgroundMobile}
           alt=""
@@ -48,10 +49,14 @@ export const Section4 = () => {
             Master essential skills and tools, enriching your knowledge with our
             comprehensive courses.
           </p>
+   <AnchorLink href="#downloadBook">
           <div className={style.buttonWrap}>
             <h3 className={style.buttonTitle}>View Free E-book</h3>
           </div>
+ </AnchorLink>
         </div>
+
+
       </div>
 
       <div className={style.secondPart} id="whyChoose">
