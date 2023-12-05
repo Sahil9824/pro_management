@@ -98,7 +98,7 @@
       padding-top: 26px;
       padding-bottom: 21px;
 
-      .imageWrap {
+      .imageWrapCard {
         display: flex;
         margin-top: 35px;
         align-items: center;
@@ -177,6 +177,8 @@
 @media (max-width: 800px) {
   .main {
     margin-top: 40px;
+    padding-left: 0%;
+    padding-right: 0%;
 
     .imageWrap {
       display: none;
@@ -252,17 +254,17 @@
       justify-content: space-between;
 
       .firstCardWrap {
-        height: 504px;
+        height: 414px;
         max-width: 354px;
         max-width: 354px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         background: rgba(25, 25, 25, 1);
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 35px;
+        padding-bottom: 35px;
 
-        .imageWrap {
+        .imageWrapCard {
           display: flex;
           margin-top: 18px;
           align-items: center;
@@ -289,7 +291,7 @@
         }
         .description {
           font-family: "Inter";
-          font-size: 12px;
+          font-size: 13px;
           margin-top: 26px;
           color: #ffffff;
           font-weight: 400;

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../..//section/Section3/section3.module.scss";
-import Background from "../../Assets/Section3Bg.png";
-import BackgroundMobile from "../../Assets/Section3BgMobile.png";
+import Background from "../../Assets/Section3BgNew.png";
+import BackgroundMobile from "../../Assets/Section3BgMobileNew.png";
 import Image from "next/image";
 import ScreenOne from "../../Assets/GraphOne.png";
 import ScreenTwo from "../../Assets/GraphTwo.png";
@@ -54,7 +54,7 @@ export const Section3 = () => {
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Alexander William Acc</p>
           <div
-            className={style.imageWrap}
+            className={style.imageWrapCard}
             onClick={() =>
               window.open(
                 "https://www.myfxbook.com/members/alexfoster/alexander-william-acc-1/8367610",
@@ -91,7 +91,7 @@ export const Section3 = () => {
         <div className={style.firstCardWrap}>
           <p className={style.heading}>ALGO TECH</p>
           <div
-            className={style.imageWrap}
+            className={style.imageWrapCard}
             onClick={() =>
               window.open(
                 "https://www.myfxbook.com/members/alexfoster/algo-tech/10090527",
@@ -128,7 +128,7 @@ export const Section3 = () => {
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Nova</p>
           <div
-            className={style.imageWrap}
+            className={style.imageWrapCard}
             onClick={() =>
               window.open(
                 "https://www.myfxbook.com/members/alexfoster/nova/10424943",

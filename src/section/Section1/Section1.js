@@ -3,8 +3,8 @@ import style from "../..//section/Section1/section1.module.scss";
 import WhatsAppButton from "../../Components/Buttons/WhatsappButton/WhatsAppButton";
 import TelegramButton from "../../Components/Buttons/TelegramButton/TelegramButton";
 import Image from "next/image";
-import BackgroundImageDesktop from "../../Assets/Group 48097726 (1).png";
-import BackgroundImageMobile from "../../Assets/BackgroundImageMobile.png";
+import BackgroundImageDesktop from "../../Assets/Section1BgNew.png";
+import BackgroundImageMobile from "../../Assets/Section1BgMobileNew.png";
 import { Header } from "../Header/Header";
 
 export const Section1 = () => {

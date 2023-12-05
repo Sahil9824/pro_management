@@ -1,9 +1,12 @@
 .main {
   margin-top: 60px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   padding-left: 6.31%;
   padding-right: 6.31%;
+  max-width: 1700px;
 
   .imageWrap {
     // padding-left: 7.6%;
@@ -99,6 +102,7 @@
       height: auto;
       width: 100%;
       max-width: 400px;
+      align-items: center;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -110,6 +114,7 @@
       .imageWrap {
         display: flex;
         margin-top: 40px;
+        align-self: center;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -155,6 +160,8 @@
         display: flex;
         margin-top: 40px;
         width: 100%;
+        align-self: center;
+
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -187,6 +194,7 @@
       height: auto;
       width: 100%;
       max-width: 400px;
+      // align-items: center;
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -199,6 +207,7 @@
         display: flex;
         margin-top: 40px;
         width: 100%;
+        align-self: center;
         align-items: center;
         justify-content: center;
         bottom: 6px;
@@ -240,7 +249,9 @@
 
 @media (max-width: 800px) {
   .main {
-    margin-top: 15px;
+    margin-top: 51px;
+    padding-left: 0%;
+    padding-right: 0%;
 
     .imageWrap {
       display: none;
