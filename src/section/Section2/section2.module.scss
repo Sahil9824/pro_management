@@ -193,29 +193,31 @@
         }
       }
     }
-
-    .buttonWrap {
+    .container {
+      max-width: 200px;
       margin-top: 46px;
-      width: 200px;
-      height: 60px;
-      border: 2px solid #5532fa;
-      border-image-slice: 1;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      .buttonWrap {
+        width: 200px;
+        height: 60px;
+        border: 2px solid #5532fa;
+        border-image-slice: 1;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-      &:hover {
-        background-color: #5532fa;
-      }
+        &:hover {
+          background-color: #5532fa;
+        }
 
-      h3 {
-        font-family: "Inter";
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 40px;
-        letter-spacing: 0em;
-        text-align: center;
+        h3 {
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
       }
     }
   }
@@ -441,7 +443,7 @@
       flex-direction: column;
       padding-left: 2.2%;
       align-self: center;
-      align-items: flex-start;
+      align-items: center;
       padding-right: 2.2%;
       width: 100%;
       max-width: 354px;
@@ -521,10 +523,11 @@
     .container {
       width: 100%;
       display: flex;
+      margin-top: 32px !important;
       justify-content: center;
       align-items: center;
       .buttonWrap {
-        margin-top: 32px;
+        margin-top: 0px;
         width: 200px;
         height: 60px;
         border: 2px solid #5532fa;

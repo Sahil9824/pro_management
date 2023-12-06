@@ -56,30 +56,33 @@
         text-align: left;
       }
 
-      .buttonWrap {
-        width: 240px;
+      .buttonContainer {
+        max-width: 240px;
         margin-top: 7.1%;
-        cursor: pointer;
-        height: 60px;
-        border: 2px solid #5532fa;
-        border-image-slice: 1;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .buttonWrap {
+          width: 240px;
+          cursor: pointer;
+          height: 60px;
+          border: 2px solid #5532fa;
+          border-image-slice: 1;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        &:hover {
-          background-color: #5532fa;
-        }
+          &:hover {
+            background-color: #5532fa;
+          }
 
-        .buttonTitle {
-          font-family: "Inter";
-          font-size: 20px;
-          text-transform: none;
-          font-weight: 400;
-          line-height: 40px;
-          letter-spacing: 0em;
-          text-align: center;
+          .buttonTitle {
+            font-family: "Inter";
+            font-size: 20px;
+            text-transform: none;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
         }
       }
     }
@@ -264,28 +267,32 @@
         text-align: left;
       }
 
-      .buttonWrap {
-        width: 180px !important;
+      .buttonContainer {
+        max-width: 180px !important;
         margin-top: 7.1%;
-        height: 50px !important;
-        border: 2px solid #5532fa;
-        border-image-slice: 1;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        &:hover {
-          background-color: #5532fa;
-        }
+        .buttonWrap {
+          width: 180px !important;
+          height: 50px !important;
+          border: 2px solid #5532fa;
+          border-image-slice: 1;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        .buttonTitle {
-          font-family: "Inter";
-          font-size: 15px !important;
-          font-weight: 400;
-          line-height: 40px;
-          letter-spacing: 0em;
-          text-align: center;
+          &:hover {
+            background-color: #5532fa;
+          }
+
+          .buttonTitle {
+            font-family: "Inter";
+            font-size: 15px !important;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
         }
       }
     }
@@ -335,28 +342,31 @@
         text-align: left;
       }
 
-      .buttonWrap {
-        width: 180px !important;
+      .buttonContainer {
+        max-width: 180px !important;
         margin-top: 7.1%;
-        height: 50px !important;
-        border: 2px solid #5532fa;
-        border-image-slice: 1;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .buttonWrap {
+          width: 180px !important;
+          height: 50px !important;
+          border: 2px solid #5532fa;
+          border-image-slice: 1;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        &:hover {
-          background-color: #5532fa;
-        }
+          &:hover {
+            background-color: #5532fa;
+          }
 
-        .buttonTitle {
-          font-family: "Inter";
-          font-size: 15px !important;
-          font-weight: 400;
-          line-height: 40px;
-          letter-spacing: 0em;
-          text-align: center;
+          .buttonTitle {
+            font-family: "Inter";
+            font-size: 15px !important;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
         }
       }
     }
@@ -435,29 +445,33 @@
           text-align: center;
         }
 
-        .buttonWrap {
-          width: 240px;
+        .buttonContainer {
+          max-width: 240px;
           margin-top: 30px;
-          height: 60px;
-          border: 2px solid #5532fa;
-          border-image-slice: 1;
-          border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
 
-          &:hover {
-            background-color: #5532fa;
-          }
+          .buttonWrap {
+            width: 240px;
+            height: 60px;
+            border: 2px solid #5532fa;
+            border-image-slice: 1;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-          .buttonTitle {
-            font-family: "Inter";
-            font-size: 20px;
-            text-transform: none;
-            font-weight: 400;
-            line-height: 40px;
-            letter-spacing: 0em;
-            text-align: center;
+            &:hover {
+              background-color: #5532fa;
+            }
+
+            .buttonTitle {
+              font-family: "Inter";
+              font-size: 20px;
+              text-transform: none;
+              font-weight: 400;
+              line-height: 40px;
+              letter-spacing: 0em;
+              text-align: center;
+            }
           }
         }
       }
