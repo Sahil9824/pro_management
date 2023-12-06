@@ -196,13 +196,13 @@ export const Section2 = () => {
             </h3>
           </div>
         </div>
-        <AnchorLink href="#copyAccount">
-          <div className={style.container}>
+        <div className={style.container}>
+          <AnchorLink href="#copyAccount">
             <div className={style.buttonWrap}>
               <h3>View Accounts</h3>
             </div>
-          </div>
-        </AnchorLink>
+          </AnchorLink>
+        </div>
       </div>
     </div>
   );
