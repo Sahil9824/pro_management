@@ -12,25 +12,25 @@ export const Section4 = () => {
   return (
     <div className={style.main}>
       <div className={style.imageWrap}>
-        <AnchorLink href="#downloadBook">
-          <Image
-            src={Background}
-            alt=""
-            style={{ width: "100%" }}
-            //   height={228}
-            //   width={269}
-            quality={100}
-          />
-        </AnchorLink>
+        <Image
+          src={Background}
+          alt=""
+          style={{ width: "100%" }}
+          //   height={228}
+          //   width={269}
+          quality={100}
+        />
         <div className={style.container}>
           <h3>Master the Art of Trading</h3>
           <p>
             Master essential skills and tools, enriching your knowledge with our
             comprehensive courses.
           </p>
-          <div className={style.buttonWrap}>
-            <h3 className={style.buttonTitle}>View Free E-book</h3>
-          </div>
+          <AnchorLink href="#downloadBook">
+            <div className={style.buttonWrap}>
+              <h3 className={style.buttonTitle}>View Free E-book</h3>
+            </div>
+          </AnchorLink>
         </div>
       </div>
       <div className={style.imageWrapMobile}>
