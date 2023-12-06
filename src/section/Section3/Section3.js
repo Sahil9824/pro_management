@@ -1,11 +1,11 @@
 import React from "react";
 import style from "../..//section/Section3/section3.module.scss";
-import Background from "../../Assets/Section3BgNew.png";
+import Background from "../../Assets/Section3BgNewx.png";
 import BackgroundMobile from "../../Assets/Section3BgMobileNew.png";
 import Image from "next/image";
-import ScreenOne from "../../Assets/GraphOne.png";
-import ScreenTwo from "../../Assets/GraphTwo.png";
-import ScreenThree from "../../Assets/GraphThree.png";
+import ScreenOne from "../../Assets/BarOne.png";
+import ScreenTwo from "../../Assets/BarTwo.png";
+import ScreenThree from "../../Assets/BarThree.png";
 
 export const Section3 = () => {
   return (
@@ -53,6 +53,7 @@ export const Section3 = () => {
       <div className={style.thirdPart}>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Alexander William Acc</p>
+          <div className={style.line}></div>
           <div
             className={style.imageWrapCard}
             onClick={() =>
@@ -90,6 +91,8 @@ export const Section3 = () => {
         </div>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>ALGO TECH</p>
+          <div className={style.line}></div>
+
           <div
             className={style.imageWrapCard}
             onClick={() =>
@@ -127,6 +130,8 @@ export const Section3 = () => {
         </div>
         <div className={style.firstCardWrap}>
           <p className={style.heading}>Nova</p>
+          <div className={style.line}></div>
+
           <div
             className={style.imageWrapCard}
             onClick={() =>
